@@ -26,3 +26,13 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+//prints arrow by calling methods print_triangle and print_square (size must be > 4 or else offset)
+void print_arrow(int leftCol, int size)
+{
+  if(size<5)
+    size = 5;
+  print_triangle(leftCol,size);
+  print_square(leftCol+3,size);
+}
+  
+
